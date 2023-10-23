@@ -1,0 +1,112 @@
+@import "vars";
+
+.banner__blog__articles {
+  background-image: url(../img/banner_blog_bg_articles.png);
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  gap: 52px;
+  margin-bottom: 96px;
+  &__box {
+    width: 900px;
+    &__title {
+      color: $textColorTitle;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%; /* 62.5px */
+      letter-spacing: 1px;
+      margin-bottom: 21px;
+    }
+    &__img {
+      margin-bottom: 46px;
+      border-radius: 50px;
+    }
+    &__date-nav {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 48px;
+      color: $textColorDescr;
+      font-family: Jost;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      letter-spacing: 0.16px;
+      text-transform: capitalize;
+    }
+    &__nav {
+      display: flex;
+      list-style: none;
+    }
+    &__text {
+      color: $textColorDescr;
+      font-family: Jost;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 33px */
+      letter-spacing: 0.22px;
+      margin-bottom: 35px;
+    }
+    &__quote {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: #cda274;
+      text-align: center;
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 27px;
+      border-radius: 50px;
+      background: #f4f0ec;
+      align-items: center;
+      padding: 53px 160px;
+      font-size: 25px;
+      letter-spacing: 0.5px;
+      line-height: 125%;
+    }
+  }
+
+  &__tags {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    &__title {
+      color: $textColorTitle;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%; /* 31.25px */
+      letter-spacing: 0.5px;
+    }
+    &__btns {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+    }
+    &__btn {
+      color: $textColorTitle;
+      text-align: center;
+      font-family: Jost;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 125%; /* 22.5px */
+      letter-spacing: 0.36px;
+      padding: 9px 30px;
+      border-radius: 10px;
+      background: #f4f0ec;
+      border: none;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+        background-color: $textColorTitle;
+      }
+    }
+  }
+}
